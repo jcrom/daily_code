@@ -16,13 +16,13 @@ let search = function (nums, target) {
     index = 0;
   let i = 1;
 
-  while (i ) {
+  while (i) {
     console.log("r:", l, r, index, i);
     index = Math.floor((l + r) / 2);
     console.log("index", index);
     if (nums[index] === target) {
       i = -1;
-    } else if (l >= r){ 
+    } else if (l >= r) {
       i = -1;
       index = -1;
     }
@@ -57,4 +57,3 @@ let re = search([3, 4, 5, 6, 7, 8, 1, 2], 2);
 console.log("re is :", re)
 console.log("re is :", search([], 2))
 console.log("re is :", search([7, 8, 9, 10, 11, 12, 13, 14, 0, 1, 2, 4, 5, 6], 4))
-
